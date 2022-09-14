@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        xmlns:lang="clr-namespace:WPF.Properties"
+        mc:Ignorable="d"
+        Title="Postavke" Height="450" Width="500" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <Label  Margin="0,20,0,0" HorizontalAlignment="Center" Content="Odaberite spol"/>
+        <ComboBox x:Name="cbSelectGender" Margin="0,0,0,20" Height="20" Width="100" HorizontalAlignment="Center">
+            <ComboBoxItem Tag="female" Content="Žensko"/>
+            <ComboBoxItem Tag="male" Content="Muško"/>
+        </ComboBox>
+
+
+        <Label HorizontalAlignment="Center" Content="Odaberite jezik"/>
+        <ComboBox x:Name="cbSelectLanguage" Margin="0,0,0,20" Height="20" Width="100" HorizontalAlignment="Center">
+            <ComboBoxItem Tag="en" Content="Engleski"/>
+            <ComboBoxItem Tag="hr" Content="Hrvatski"/>
+        </ComboBox>
+
+
+        <Label HorizontalAlignment="Center" Content="Odaberite veličinu ekrana"/>
+        <ComboBox x:Name="cbSelectScreenSize" Margin="0,0,0,20" Height="20" Width="100" HorizontalAlignment="Center">
+            <ComboBoxItem Tag="small" Content="Manji"/>
+            <ComboBoxItem Tag="medium" Content="Srednji"/>
+            <ComboBoxItem Tag="large" Content="Veliki"/>
+        </ComboBox>
+
+        <Button  x:Name="btnContinue" Margin="0,20,0,0" 
+                 Content="Nastavi" 
+                 HorizontalAlignment="Center" Padding="20,5"
+                 Click="btnContinue_Click"
+                 />
+
+    </StackPanel>
+</Window>

@@ -1,0 +1,159 @@
+﻿<Window x:Class="WPF.InfoTeam"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:lang="clr-namespace:WPF.Properties"
+         xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Info tim" Height="750" Width="500" FontSize="20" WindowStartupLocation="CenterScreen">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+
+                    <DoubleAnimation Storyboard.TargetProperty="Height" From="0" To="750" Duration="00:00:0.5" FillBehavior="HoldEnd" AutoReverse="False"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+
+
+        <Label 
+            x:Name="label1"
+            Grid.Row="0"
+            Margin="20"
+            HorizontalContentAlignment="Center"
+            Content="Nesto" Grid.ColumnSpan="2"/>
+        <Label    
+            Grid.Row="0"
+            Margin="20"
+            HorizontalContentAlignment="Left"
+            Content="" Grid.ColumnSpan="2"/>
+
+
+        <Label 
+            x:Name="label2"
+            Grid.Row="1"
+            Margin="20"
+            HorizontalContentAlignment="Center"
+            Content="Nesto" Grid.ColumnSpan="2"/>
+        <Label          
+            Grid.Row="1"
+            Margin="20"
+            HorizontalContentAlignment="Left"
+            Content="FIFA code" Grid.ColumnSpan="2"/>
+
+
+        <Label 
+            x:Name="label3"
+            Grid.Row="2"
+            Margin="20"
+            HorizontalContentAlignment="Center"
+            Content="Nesto" Grid.ColumnSpan="2"/>
+        <Label 
+            Grid.Row="2"
+            Margin="20"
+            HorizontalContentAlignment="Left"
+            Content="Odigrane utakmice" Grid.ColumnSpan="2"/>
+
+
+        <Label 
+            x:Name="label4"
+            Grid.Row="3"
+            Margin="20"
+            HorizontalContentAlignment="Center"
+            Content="Nesto" Grid.ColumnSpan="2"/>
+        <Label 
+            Grid.Row="3"
+            Margin="20"
+            HorizontalContentAlignment="Left"
+            Content="Pobjede" Grid.ColumnSpan="2"/>
+
+
+        <Label 
+            x:Name="label5"
+            Grid.Row="4"
+            Margin="20"
+            HorizontalContentAlignment="Center"
+            Content="Nesto" Grid.ColumnSpan="2"/>
+        <Label 
+            Grid.Row="4"
+            Margin="20"
+            HorizontalContentAlignment="Left"
+            Content="Porazi" Grid.ColumnSpan="2"/>
+
+
+        <Label 
+            x:Name="label6"
+            Grid.Row="5"
+            Margin="20"
+            HorizontalContentAlignment="Center"
+            Content="Nesto" Grid.ColumnSpan="2"/>
+        <Label 
+            Grid.Row="5"
+            Margin="20"
+            HorizontalContentAlignment="Left"
+            Content="Neriješeno" Grid.ColumnSpan="2"/>
+
+
+        <Label 
+            x:Name="label7"
+            Grid.Row="6"
+            Margin="20"
+            HorizontalContentAlignment="Center"
+            Content="Nesto" Grid.ColumnSpan="2"/>
+        <Label 
+            Grid.Row="6"
+            Margin="20"
+            HorizontalContentAlignment="Left"
+             Content="Zabijeni golovi" Grid.ColumnSpan="2"/>
+
+
+        <Label 
+            x:Name="label8"
+            Grid.Row="7"
+            Margin="20"
+            HorizontalContentAlignment="Center"
+            Content="Nesto" Grid.ColumnSpan="2"/>
+        <Label 
+            Grid.Row="7"
+            Margin="20"
+            HorizontalContentAlignment="Left"
+            Content="Primljeni golovi" Grid.ColumnSpan="2"/>
+
+
+        <Label 
+            x:Name="label9"
+            Grid.Row="8"
+            Margin="20"
+            HorizontalContentAlignment="Center"
+            Content="Nesto" Grid.ColumnSpan="2"/>
+        <Label 
+            Grid.Row="8"
+            Margin="20"
+            HorizontalContentAlignment="Left"
+            Content="Razlika" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
